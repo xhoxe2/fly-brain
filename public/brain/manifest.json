@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "dataset": "male-cns:v1.0",
+  "source": "https://male-cns.janelia.org/download/",
+  "license": "CC BY 4.0",
+  "attribution": "FlyEM / HHMI Janelia, Cambridge, MRC LMB and Google Research",
+  "tracedNeurons": 165122,
+  "mappedSomas": 140024,
+  "omittedWithoutSoma": 25098,
+  "units": "100 micrometres",
+  "overview": {
+    "file": "overview.bin.gz",
+    "bytes": 2800496,
+    "gzipBytes": 1926312,
+    "sha256": "9883df0f24f1ea2ae874566f70ec3be6a4efc316f47759bb787326deb13649de"
+  },
+  "background": {
+    "file": "background.bin.gz",
+    "bytes": 4140456,
+    "gzipBytes": 1303336,
+    "sha256": "172bab3047517f2216d347b227e9ff1e58b70751f1fca4176cc8e5a325970698"
+  },
+  "regions": [
+    {
+      "id": 0,
+      "name": "Optic lobes",
+      "neurons": 64,
+      "geometry": {
+        "file": "region-0.bin.gz",
+        "bytes": 5213056,
+        "gzipBytes": 1502282,
+        "sha256": "2df7f0e8205501b2d23626b1ca244c4aed93eb0c716b8a3b7b0b3b6220bf3643"
+      }
+    },
+    {
+      "id": 1,
+      "name": "Central brain",
+      "neurons": 64,
+      "geometry": {
+        "file": "region-1.bin.gz",
+        "bytes": 4054536,
+        "gzipBytes": 1118536,
+        "sha256": "92ae698c11bb7e79ddafbad4d9c5474c0e896fc66d8cfa870970334e75c81937"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Ventral nerve cord",
+      "neurons": 64,
+      "geometry": {
+        "file": "region-2.bin.gz",
+        "bytes": 4715856,
+        "gzipBytes": 1316313,
+        "sha256": "0f537c6930c9b7cec7a3eeb5e1943ddb2c3132759a950302639c5f352410bd62"
+      }
+    }
+  ],
+  "circuit": "escape.json",
+  "circuitNeurons": 36,
+  "circuitEdges": 250,
+  "note": "Overview positions are actual cell bodies. Skeleton overview and region detail are representative subsets, not every neuron."
+}
