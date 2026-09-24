@@ -5,6 +5,7 @@ dist/
 __pycache__/
 output/
 .playwright-cli/
+.wrangler/
 .env*
 !.env.example
 .DS_Store

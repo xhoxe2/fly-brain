@@ -13,6 +13,7 @@ export interface Manifest {
   overview: Asset;
   background: Asset;
   circuit: string;
+  circuits: Record<"escape" | "motion" | "light", string>;
   circuitNeurons: number;
   circuitEdges: number;
   regions: { id: number; name: string; neurons: number; geometry: Asset }[];
@@ -29,8 +30,21 @@ export interface Neuron {
   outputs: number;
   role: string;
   path: [number, number, number][];
+  polarity: 1 | -1;
 }
 export interface Circuit {
+  kind: "escape" | "motion" | "light";
+  action: "jump" | "turn" | "none";
+  inputTypes: string[];
+  outputTypes: string[];
+  stages: {
+    id: "visual" | "descending" | "motor";
+    label: string;
+    detail: string;
+    types: string[];
+  }[];
+  sources: { title: string; url: string }[];
+  scientificNote: string;
   neurons: Neuron[];
   edges: [number, number, number][];
   geometry: Asset;

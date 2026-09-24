@@ -10,7 +10,9 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node --experimental-strip-types --test src/simulation.test.ts"
+    "test": "node --experimental-strip-types --test src/*.test.ts",
+    "test:feeding": "node --experimental-strip-types tools/check-feeding.ts",
+    "test:finger": "node --experimental-strip-types tools/check-finger.ts"
   },
   "dependencies": {
     "three": "0.186.0"

@@ -13,7 +13,8 @@ https://creativecommons.org/licenses/by/4.0/
 Changes made by FLY//BRAIN: selected traced neurons with soma locations;
 transformed 8 nm source coordinates to a centered display frame with one unit
 equal to 100 micrometres; simplified representative SWC skeletons; extracted a
-36-neuron chemical-synapse subgraph; packed and gzip-compressed browser assets.
+selected escape (36-neuron), motion (32-neuron) and light (24-neuron)
+chemical-synapse subgraphs; packed and gzip-compressed browser assets.
 Manifests include file sizes and SHA-256 of decompressed numerical data.
 
 Activity timing, camera traversal direction and behavior are illustrative model

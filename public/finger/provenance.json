@@ -1,0 +1,35 @@
+{
+  "source": "https://github.com/makehumancommunity/makehuman/blob/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/3dobjs/base.obj",
+  "sourceCommit": "a8bc2d54ff0ac92e78ff71431b1023eda42bf482",
+  "sourceSHA256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c",
+  "license": "CC0-1.0",
+  "licensePolicy": "https://github.com/makehumancommunity/makehuman/blob/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/LICENSE.md",
+  "weightsSource": "https://github.com/makehumancommunity/makehuman/blob/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/rigs/default_weights.mhw",
+  "weightsSHA256": "0f3641d651ae3d00ad6b4ccee43142edb109d3bd909d27d9e4139ef1beed8625",
+  "preparation": "Left hand with attached forearm; crop 65% from wrist toward elbow, capped beyond scene; static pointing pose using official skin weights; two Catmull-Clark levels; index distal surface vertex recentered; -120 degree roll about glTF Z",
+  "poseDegrees": {
+    "thumb": [
+      20,
+      45,
+      45
+    ],
+    "middleRingLittle": [
+      58,
+      85,
+      45
+    ],
+    "index": [
+      0,
+      0,
+      0
+    ]
+  },
+  "rollDegrees": -120,
+  "coordinates": "Y-up glTF, index distal vertex at origin, complete hand behind tip along -Z; runtime scale 3.2 and tip height 0.95",
+  "vertices": 28210,
+  "triangles": 56416,
+  "blenderVersion": "5.2.2 LTS",
+  "bytes": 1016668,
+  "sha256": "2b2dc36ae26f51bdb8afa581e6dffe199240b472d24e3ab3db7a6f2b6012e217",
+  "limitations": "Authored MakeHuman base human mesh, not a medical scan or measured physiology. Skin and scale are illustrative."
+}

@@ -58,5 +58,10 @@
   "circuit": "escape.json",
   "circuitNeurons": 36,
   "circuitEdges": 250,
-  "note": "Overview positions are actual cell bodies. Skeleton overview and region detail are representative subsets, not every neuron."
+  "note": "Overview positions are actual cell bodies. Skeleton overview and region detail are representative subsets, not every neuron.",
+  "circuits": {
+    "escape": "escape.json",
+    "motion": "motion.json",
+    "light": "light.json"
+  }
 }

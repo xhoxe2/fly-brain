@@ -1,0 +1,27 @@
+NeuroMechFly v2 assets vendored from flygym
+  source: https://github.com/NeLy-EPFL/flygym (ref dev-v2.0.3)
+  path:   src/flygym/assets/model
+
+flygym is distributed under the Apache License, Version 2.0. The
+bundled meshes (meshes/*.stl) and the derived metadata (rigging.json,
+neutral_pose.json, colors.json) originate from that project and remain
+subject to its license and attribution requirements.
+
+NeuroMechFly v2 reference:
+  Wang-Chen et al. (2024), NeuroMechFly v2, Nature Methods.
+  https://doi.org/10.1038/s41592-024-02497-y
+
+Regenerate with: python scripts/vendor_neuromechfly_assets.py
+
+FLY//BRAIN derivative: pinned fly-svg-maker 152506d3471646f009480c81f34aefbaec29a6e5.
+High-resolution visual surfaces from NeuroMechFly 6fdc6212bcf5b71fcd47bca119876c92092c2cd6.
+Meshes posed, mirrored, decimated and merged; shell segmentation noise lightly smoothed;
+duplicate faces removed, normals and materials rebuilt; authored appearance-only
+pigmentation and UVs added; anatomical joint-axis metadata exported;
+original mouth surfaces registered to the v2 folded rest frames;
+rostrum and haustellum retain their anatomical pivots as a separate
+head-parented mouth chain; articulation does not alter the resting surfaces;
+original wing surfaces registered to the v2 frame (+15.21 degree local pitch);
+proximal 0.30 mm wing hinge triangles retain opaque cuticle shading;
+coordinates transformed and joints retained for illustrative animation.
+The micro-CT adult female morphology is a visual reference, not the Male CNS specimen.

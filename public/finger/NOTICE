@@ -1,0 +1,11 @@
+Pointing hand and forearm derived from the official MakeHuman hm08 base mesh.
+Source: https://github.com/makehumancommunity/makehuman/blob/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/3dobjs/base.obj
+Original asset explicitly released under CC0 1.0 Universal in September 2020.
+Source copyright holders: Data Collection AB; Joel Palmius; Jonas Hauquier (2020).
+Official skin weights are also CC0, copyright Data Collection AB; Joel Palmius; Jonas Hauquier (2021).
+Weights: https://github.com/makehumancommunity/makehuman/blob/a8bc2d54ff0ac92e78ff71431b1023eda42bf482/makehuman/data/rigs/default_weights.mhw
+Derivative: connected left hand and forearm, capped forearm crop, static pointing pose using official weights,
+two subdivision levels, index tip recentered, rigid -120 degree Z roll to clear the floor.
+Authored human mesh, NOT a medical scan or physiological measurement. Skin and scale are illustrative.
+Only graphical asset data is bundled, not MakeHuman application code.
+See LICENSE and provenance.json.

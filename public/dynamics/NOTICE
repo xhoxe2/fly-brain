@@ -1,0 +1,5 @@
+Whole-brain model: Philip Shiu et al., A Drosophila computational brain model reveals sensorimotor processing, Nature (2024).
+Author code and connectivity distribution: MIT; see MODEL-LICENSE and provenance.json.
+FlyWire 630 annotations: Philipp Schlegel et al. (2023), Whole-brain annotation and multi-connectome cell typing quantifies circuit stereotypy in Drosophila.
+Annotation dataset released CC BY 4.0: https://creativecommons.org/licenses/by/4.0/ ; https://zenodo.org/records/8077335 .
+Derived assets preserve all model neurons and signed connections. Positions are source anchor points, not somata.

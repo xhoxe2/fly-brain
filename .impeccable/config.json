@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "helvetica",
+        "createdAt": "2026-09-23T12:12:46.570Z",
+        "reason": "Agent design decision: the reviewed scientific scene uses Helvetica Neue for compact controls, Georgia for specimen names and monospace for model time. Neutral system typography keeps attention on the anatomical visualization without an extra font download."
+      }
+    ]
+  }
+}

@@ -237,8 +237,14 @@ def prepare():
             for value, count in zip(values, freq):
                 counts[int(value)] += int(count)
     circuit = {'source': SOURCE, 'dataset': 'male-cns:v1.0', 'geometry': circuit_geometry,
+        'kind': 'escape', 'action': 'jump', 'inputTypes': ['LC4', 'LPLC2'], 'outputTypes': ['TTMn'],
+        'stages': [{'id': 'visual', 'label': 'Looming input', 'detail': 'LC4 · LPLC2', 'types': ['LC4', 'LPLC2']},
+                   {'id': 'descending', 'label': 'Escape command', 'detail': 'Giant fiber · DNp01', 'types': ['DNp01']},
+                   {'id': 'motor', 'label': 'Jump output', 'detail': 'TTMn', 'types': ['TTMn']}],
+        'sources': [{'title': 'Male CNS source data', 'url': SOURCE}],
+        'scientificNote': 'Measured LC4/LPLC2 → giant-fiber → TTMn chemical connections. Timing and jump are illustrative; this is not recorded brain activity or a biophysical simulation.',
         'neurons': [{'id': str(r['bodyId']), 'type': r['type'], 'name': r['instance'],
-                     'side': r['somaSide'], 'region': region(r), 'group': r['superclass'],
+                     'side': r['somaSide'], 'region': region(r), 'group': r['superclass'], 'polarity': 1,
                      'position': transform(r['somaLocation']).tolist(),
                      'inputs': counts_in[r['bodyId']], 'outputs': counts_out[r['bodyId']],
                      'role': 'Visual projection' if r['type'] in ('LC4', 'LPLC2') else
@@ -260,6 +266,7 @@ def prepare():
         'tracedNeurons': len(traced), 'mappedSomas': len(somas),
         'omittedWithoutSoma': len(traced) - len(somas), 'units': '100 micrometres',
         'overview': overview, 'background': background, 'regions': regions,
+        'circuits': {kind: f'{kind}.json' for kind in ('escape', 'motion', 'light')},
         'circuit': 'escape.json', 'circuitNeurons': len(neurons), 'circuitEdges': len(circuit_edges),
         'note': 'Overview positions are actual cell bodies. Skeleton overview and region detail are representative subsets, not every neuron.'}
     (OUT / 'manifest.json').write_text(json.dumps(manifest, indent=2))
